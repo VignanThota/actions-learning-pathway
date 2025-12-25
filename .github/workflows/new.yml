@@ -1,9 +1,26 @@
 name: actions-test
-on: push
+on:
+  push:
+    branches:
+      - "action-test"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      - "actions-test/example1.txt"
+  workflow_dispatch:
 jobs:
-  hello-world-job:
+  case-1:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: echo "$(cat hello_world.txt)"
+        run: |
+          echo "Hello Vignan"
+          
+  
+  
+  
+  
+

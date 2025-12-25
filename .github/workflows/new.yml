@@ -18,7 +18,7 @@ jobs:
       - name: Check out repository code
         run: |
           echo "Hello Vignan"
-          echo "How are you"
+          echo "How are you..."
           
   
   

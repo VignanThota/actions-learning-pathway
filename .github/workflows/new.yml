@@ -9,7 +9,7 @@ on:
       - synchronize
       - reopened
     paths:
-      - "actions-test/example1.txt"
+      - "actions-learning-pathway/example1.txt"
   workflow_dispatch:
 jobs:
   case-1:

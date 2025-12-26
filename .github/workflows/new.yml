@@ -1,0 +1,27 @@
+name: actions-test
+on:
+  push:
+    branches:
+      - "actions-test"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      - "actions-learning-pathway/example1.txt"
+  workflow_dispatch:
+jobs:
+  case-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        run: |
+          echo "Hello Vignan"
+          echo "How are you..."
+          
+  
+  
+  
+  
+
